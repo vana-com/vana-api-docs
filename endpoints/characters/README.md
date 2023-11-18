@@ -30,3 +30,27 @@ Get the details of a specific character, given its character ID. The character I
 ```
 {% endswagger-response %}
 {% endswagger %}
+
+### Text-to-Speech
+
+{% swagger method="get" path="/characters/:character-id/speak" baseUrl="https://api.vana.com/api/v0" summary="" %}
+{% swagger-description %}
+Once a character is trained on a voice, we can use this endpoint to get back audio of their speech, given a text input.
+{% endswagger-description %}
+
+{% swagger-parameter in="path" name="character-id" required="true" type="uuid" %}
+
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="text" %}
+The text to convert to speech
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="" %}
+```json
+{
+    "url": "https://link-to-audio-file.mp3"
+}
+```
+{% endswagger-response %}
+{% endswagger %}
