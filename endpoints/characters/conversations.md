@@ -138,7 +138,7 @@ Represents the mimeType of the data field (ex: text/plain, image/png)
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="allow" type="String Array" %}
-The allowed mimetypes of the response from the character
+The allowed mimetypes of the response from the character. To receive text, use `[text/plain]`. To receive audio, use `[audio/mp3]`.
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="" %}
