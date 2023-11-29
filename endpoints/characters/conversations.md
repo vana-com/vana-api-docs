@@ -120,7 +120,7 @@ Sample Response Body
 
 ### Send a message (Coming Soon)
 
-{% swagger method="get" path="/conversations/:conversation-id/chat" baseUrl="https://api.vana.com/api/v0" summary="Send a new message in a conversation" %}
+{% swagger method="post" path="/conversations/:conversation-id/chat" baseUrl="https://api.vana.com/api/v0" summary="Send a new message in a conversation" %}
 {% swagger-description %}
 
 {% endswagger-description %}
